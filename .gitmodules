@@ -1,0 +1,3 @@
+[submodule "URUS"]
+	path = URUS
+	url = https://github.com/UrusTeam/URUS
