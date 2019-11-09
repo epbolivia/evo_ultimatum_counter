@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<UrusStudio_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="evo_ultimatum" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/evo_ultimatum" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`wx-config  --version=2.8 --static=no --unicode=yes --debug=no --cflags`" />
+					<Add option="-std=gnu++11" />
+					<Add option="-Wno-literal-suffix" />
+					<Add option="-Wformat=0" />
+					<Add directory="/system/urus/include/urusstudio/wxContribItems/wxled/lcdwindow/include" />
+					<Add directory="URUS/libraries" />
+				</Compiler>
+				<Linker>
+					<Add option="`wx-config  --version=2.8 --static=no --unicode=yes --debug=no --libs`" />
+					<Add library="wxkwic" />
+					<Add library="wxled" />
+					<Add library="MasterApmLibs" />
+					<Add library="pthread" />
+					<Add directory="/system/urus/lib/urusstudio/wxContribItems" />
+					<Add directory="URUS/build/uruscygwin/lib/Release" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/evo_ultimatum" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="`wx-config  --version=2.8 --static=no --unicode=yes --debug=no --cflags`" />
+					<Add option="-std=gnu++11" />
+					<Add option="-Wno-literal-suffix" />
+					<Add option="-Wformat=0" />
+					<Add option="-std=gnu++11" />
+					<Add option="-ffunction-sections" />
+					<Add option="-fdata-sections" />
+					<Add option="-fno-exceptions" />
+					<Add option="-fsigned-char" />
+					<Add option="-fpermissive" />
+					<Add option="-Wpointer-arith" />
+					<Add option="-Wwrite-strings" />
+					<Add option="-Wno-unused-parameter" />
+					<Add option="-fno-threadsafe-statics" />
+					<Add option="-Wno-unknown-pragmas" />
+					<Add option="-Wno-overflow" />
+					<Add option="-Wno-sign-compare" />
+					<Add option="-Wno-missing-field-initializers" />
+					<Add option="-Wno-trigraphs" />
+					<Add directory="/system/urus/include/urusstudio/wxContribItems/wxled/lcdwindow/include" />
+					<Add directory="URUS/libraries" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`wx-config  --version=2.8 --static=no --unicode=yes --debug=no --libs`" />
+					<Add library="wxkwic" />
+					<Add library="wxled" />
+					<Add library="MasterApmLibs" />
+					<Add library="pthread" />
+					<Add directory="/system/urus/lib/urusstudio/wxContribItems" />
+					<Add directory="URUS/build/uruscygwin/lib/Release" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Wno-unused-local-typedefs" />
+			<Add option="-D__STDC_FORMAT_MACROS=1" />
+			<Add option="-D_GNU_SOURCE=1" />
+			<Add option="-DSHAL_CORE_CYGWIN=1" />
+			<Add option="-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE" />
+			<Add option="-DCONFIG_SHAL_CORE=SHAL_CORE_CYGWIN" />
+			<Add option="-DCONFIG_HAL_BOARD=HAL_BOARD_URUS" />
+			<Add option="-DHAVE_TYPE_TRAITS_H=1" />
+			<Add option="-DHAVE_CMATH_H=1" />
+			<Add option="-DHAVE_STD_NULLPTR_T=1" />
+			<Add option="-DHAL_OS_POSIX_IO=1" />
+			<Add option="-DHAVE_STD_MOVE=1" />
+			<Add option="-DHAVE_STD_REMOVE_REFERENCE=1" />
+			<Add option="-DHAVE_ENDIAN_H=1" />
+			<Add option="-DHAVE_BYTESWAP_H=1" />
+		</Compiler>
+		<Unit filename="evo_ultimatumApp.cpp" />
+		<Unit filename="evo_ultimatumApp.h" />
+		<Unit filename="evo_ultimatumMain.cpp" />
+		<Unit filename="evo_ultimatumMain.h" />
+		<Unit filename="ur_system.cpp" />
+		<Unit filename="ur_system.h" />
+		<Unit filename="wxsmith/evo_ultimatumdialog.wxs" />
+		<Extensions>
+			<code_completion />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="evo_ultimatumApp.cpp" main="evo_ultimatumDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/evo_ultimatumdialog.wxs" src="evo_ultimatumMain.cpp" hdr="evo_ultimatumMain.h" fwddecl="0" i18n="1" name="evo_ultimatumDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</UrusStudio_project_file>

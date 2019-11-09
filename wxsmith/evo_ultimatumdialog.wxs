@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="evo_ultimatumDialog">
+		<title>Urus GUI app</title>
+		<size>720,480</size>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>0,0</pos>
+			<size>720,480</size>
+			<bg>#000000</bg>
+			<handler function="OnPanel1Paint" entry="EVT_PAINT" />
+			<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="static_bg_bitmap" member="yes">
+				<pos>0,0</pos>
+				<size>720,408</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON1" variable="start" member="yes">
+				<label>Start</label>
+				<pos>0,464</pos>
+				<size>16,16</size>
+				<bg>wxSYS_COLOUR_MENUTEXT</bg>
+				<handler function="OnstartClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON2" variable="close" member="yes">
+				<pos>704,464</pos>
+				<size>16,16</size>
+				<bg>wxSYS_COLOUR_MENUTEXT</bg>
+				<handler function="OnQuit" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxLCDWindow" name="wxID_ANY" variable="LcdTimeCounter" member="yes">
+				<Number_Digits>11</Number_Digits>
+				<Content>00:00:00:00</Content>
+				<Light_Colour>#FF0006</Light_Colour>
+				<Back_Colour>#350002</Back_Colour>
+				<Background>#000000</Background>
+				<pos>96,376</pos>
+				<size>536,104</size>
+			</object>
+		</object>
+		<object class="wxTimer" name="ID_TIMER1" variable="TimerLooper" member="yes">
+			<handler function="OnTimer1Trigger" entry="EVT_TIMER" />
+		</object>
+	</object>
+</wxsmith>
