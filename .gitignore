@@ -1,0 +1,12 @@
+.objs*
+debug
+release
+*.gch
+*.layout
+*.depend
+*.a
+*.exe
+*.def
+*.bmarks
+/build*
+*.dll
