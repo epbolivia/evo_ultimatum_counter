@@ -10,7 +10,6 @@ IMPLEMENT_APP(evo_ultimatumApp);
 
 bool evo_ultimatumApp::OnInit()
 {
-    //(*AppInitialize
     bool wxsOK = true;
     wxInitAllImageHandlers();
     if ( wxsOK )
@@ -21,7 +20,7 @@ bool evo_ultimatumApp::OnInit()
     	Dlg.ShowModal();
     	wxsOK = false;
     }
-    //*)
+
     return wxsOK;
 
 }
