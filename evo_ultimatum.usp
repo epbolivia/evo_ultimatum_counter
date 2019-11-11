@@ -6,7 +6,7 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
+			<Target title="URUSCYGWIN_Debug">
 				<Option output="bin/Debug/evo_ultimatum" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
@@ -31,7 +31,7 @@
 					<Add directory="URUS/build/uruscygwin/lib/Release" />
 				</Linker>
 			</Target>
-			<Target title="Release">
+			<Target title="URUSCYGWIN_Release">
 				<Option output="bin/Release/evo_ultimatum" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
@@ -43,7 +43,6 @@
 					<Add option="-std=gnu++11" />
 					<Add option="-Wno-literal-suffix" />
 					<Add option="-Wformat=0" />
-					<Add option="-std=gnu++11" />
 					<Add option="-ffunction-sections" />
 					<Add option="-fdata-sections" />
 					<Add option="-fno-exceptions" />
