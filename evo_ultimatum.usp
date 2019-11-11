@@ -28,7 +28,7 @@
 					<Add library="MasterApmLibs" />
 					<Add library="pthread" />
 					<Add directory="/system/urus/lib/urusstudio/wxContribItems" />
-					<Add directory="URUS/build/uruscygwin/lib/Release" />
+					<Add directory="URUS/build/uruscygwin/lib/Debug" />
 				</Linker>
 			</Target>
 			<Target title="URUSCYGWIN_Release">
